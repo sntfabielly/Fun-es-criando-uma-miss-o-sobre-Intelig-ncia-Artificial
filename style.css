@@ -1,0 +1,394 @@
+/* ============================================
+   RESET E CONFIGURAÇÕES GERAIS
+   ============================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f5e6d3 0%, #e8d5c4 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: rgba(255, 248, 245, 0.85);
+    border-radius: 30px;
+    padding: 40px;
+    box-shadow: 0 20px 60px rgba(180, 150, 130, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+/* ============================================
+   CABEÇALHO
+   ============================================ */
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    border-bottom: 3px dashed #d4b8a8;
+}
+
+.header h1 {
+    font-size: 3rem;
+    color: #7a5a4a;
+    margin-bottom: 10px;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.header h1 span {
+    background: linear-gradient(45deg, #b8a090, #8a7a6a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.header p {
+    color: #8a7a6a;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.emoji-big {
+    font-size: 4rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* ============================================
+   CARDS DA MISSÃO
+   ============================================ */
+.mission-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.mission-card {
+    background: rgba(255, 245, 240, 0.8);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 8px 25px rgba(180, 150, 130, 0.15);
+    transition: all 0.3s ease;
+    border: 2px solid rgba(210, 185, 170, 0.3);
+}
+
+.mission-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(180, 150, 130, 0.25);
+    border-color: #c4a898;
+}
+
+.mission-card .icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.mission-card h3 {
+    color: #6a5a4a;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.mission-card p {
+    color: #8a7a6a;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* ============================================
+   ÁREA DO OBJETO
+   ============================================ */
+.object-area {
+    background: rgba(245, 235, 225, 0.6);
+    border-radius: 20px;
+    padding: 30px;
+    margin: 40px 0;
+    border: 2px solid #dcc8b8;
+}
+
+.object-area h2 {
+    color: #7a5a4a;
+    font-weight: 300;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.object-display {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.object-box {
+    background: rgba(255, 248, 245, 0.9);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: inset 0 2px 10px rgba(180, 150, 130, 0.1);
+}
+
+.object-box h4 {
+    color: #8a7a6a;
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.object-box .property {
+    background: rgba(230, 215, 205, 0.3);
+    padding: 10px 15px;
+    margin: 8px 0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Courier New', monospace;
+    color: #5a4a3a;
+}
+
+.object-box .property .key {
+    color: #8a6a5a;
+    font-weight: 600;
+}
+
+.object-box .property .value {
+    color: #6a5a4a;
+}
+
+/* ============================================
+   BOTÕES
+   ============================================ */
+.btn-group {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+
+.btn {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: #dcc8b8;
+    color: #5a4a3a;
+    box-shadow: 0 4px 15px rgba(180, 150, 130, 0.2);
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(180, 150, 130, 0.3);
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+.btn-primary {
+    background: #b8a090;
+    color: white;
+}
+
+.btn-success {
+    background: #b8c4a8;
+    color: white;
+}
+
+.btn-warning {
+    background: #d4c4a8;
+    color: white;
+}
+
+/* ============================================
+   LISTA DE OBJETOS
+   ============================================ */
+.object-list {
+    background: rgba(245, 235, 225, 0.4);
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 20px;
+    animation: fadeIn 0.5s ease;
+}
+
+.object-item {
+    background: rgba(255, 248, 245, 0.8);
+    padding: 12px 20px;
+    margin: 8px 0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 4px solid #c4a898;
+    transition: all 0.2s ease;
+}
+
+.object-item:hover {
+    background: rgba(255, 248, 245, 1);
+    transform: translateX(5px);
+}
+
+.object-item .name {
+    font-weight: 600;
+    color: #6a5a4a;
+}
+
+.object-item .details {
+    color: #8a7a6a;
+    font-size: 0.9rem;
+}
+
+/* ============================================
+   FOOTER / REFLEXÃO SOBRE IA
+   ============================================ */
+.footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 2px dashed #dcc8b8;
+    color: #8a7a6a;
+}
+
+.footer .ia-reflection {
+    background: rgba(230, 215, 205, 0.3);
+    padding: 25px;
+    border-radius: 15px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.footer .ia-reflection h3 {
+    color: #7a5a4a;
+    margin-bottom: 15px;
+    font-weight: 300;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.footer .ia-reflection p {
+    font-size: 0.95rem;
+    line-height: 1.8;
+}
+
+.footer .ia-reflection em {
+    display: block;
+    text-align: center;
+    font-size: 1.1rem;
+    color: #7a5a4a;
+    margin-top: 15px;
+    font-style: italic;
+}
+
+/* ============================================
+   ANIMAÇÕES
+   ============================================ */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.mission-card {
+    animation: fadeIn 0.6s ease forwards;
+}
+
+.mission-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.mission-card:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+/* ============================================
+   RESPONSIVIDADE
+   ============================================ */
+@media (max-width: 1024px) {
+    .container {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    .header h1 {
+        font-size: 2.2rem;
+    }
+
+    .object-display {
+        grid-template-columns: 1fr;
+    }
+
+    .mission-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .btn-group {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .object-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .object-item .details {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 15px;
+        border-radius: 20px;
+    }
+
+    .header h1 {
+        font-size: 1.8rem;
+    }
+
+    .header p {
+        font-size: 1rem;
+    }
+
+    .mission-card {
+        padding: 20px;
+    }
+
+    .object-area {
+        padding: 15px;
+    }
+
+    .object-box {
+        padding: 15px;
+    }
+}
